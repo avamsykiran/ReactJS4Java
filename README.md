@@ -38,7 +38,7 @@ ReactJS
 
 
             1. html-content is generated on the server for everhy request.
-            2. as many number of cleitns that much of work-load on server
+            2. as many number of clients that much of work-load on server
             3. client can not show any page unless the server sends the html content in the resp.
         
         Single PAge Applications
@@ -55,11 +55,11 @@ ReactJS
 
                                                                         when any event happens,
                                                                         or when a form is submitted
-                                                                        or when a link is clieked,
+                                                                        or when a link is clicked,
 
-                                                                        the javascript ahdnles all of them.
+                                                                        the javascript handles all of them.
                                                                         it generates html-content dynamically
-                                                                        pon the cleint and repalces the content
+                                                                        pon the client and repalces the content
                                                                         of the html page with the newly generated content
                                                                         from time to time.
 
@@ -218,7 +218,21 @@ ReactJS
             }
         }
 
-        <Dashboard />
+        <Dashboard />       renders     <h1>My First App</h1>
+
+        type SimpleInterestCompStateType = {loanAmt:number,roi:number,timePeriod:number};
+        class SimpleInterestComp extends React.Component< {}, SimpleInterestCompStateType > {
+            constructor(props:{}){
+                .......
+            }
+
+            render(){
+                return (
+                    ..,,,,,,,,,,,,,,,,
+                )
+            }
+        }
+
 
     LifeCycle of a Class Component
     ---------------------------------------
@@ -300,7 +314,7 @@ ReactJS
         1. Function Components are highly light weight compared to Class Components.
         2. These are not attached to the React Framework directly and hence are easy to test.
         3. These can receive 'props' as an argument.
-
+        
             const PageHeader = (props : {title:string} ) => (
                 <header>
                     <h3>{props.title} </h3>
